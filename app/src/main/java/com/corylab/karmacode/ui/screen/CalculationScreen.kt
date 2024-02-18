@@ -20,9 +20,9 @@ import androidx.navigation.NavController
 @Composable
 fun CalculationScreen(navController: NavController) {
     Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
-        val day = rememberSaveable { mutableStateOf("") }
-        val month = rememberSaveable { mutableStateOf("") }
-        val year = rememberSaveable { mutableStateOf("") }
+        val day = rememberSaveable { mutableStateOf("25") }
+        val month = rememberSaveable { mutableStateOf("11") }
+        val year = rememberSaveable { mutableStateOf("2003") }
         TextField(
             value = day.value,
             onValueChange = { day.value = it },
